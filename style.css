@@ -1,0 +1,70 @@
+/* ============================
+   General Layout and Container
+   ============================ */
+
+/* Centers all content horizontally and adds top spacing */
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif; /* Added a modern font for better appearance */
+}
+
+/* ============================
+   Color Box Styling
+   ============================ */
+
+/* The color box — a square that changes color dynamically */
+#color-box {
+  width: 200px;
+  height: 200px;
+  background-color: #ff6347; /* Default color: Tomato Red */
+  margin: 20px auto; /* Centers the box horizontally */
+  border-radius: 12px; /* Slightly more rounded for a smoother look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+  transition: background-color 0.4s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+/* Adds a subtle animation effect when hovering over the box */
+#color-box:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* ============================
+   Button Styling
+   ============================ */
+
+/* Primary button that triggers the color change */
+#change-color-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #333; /* Dark background for contrast */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover feedback */
+}
+
+/* Button hover state — lighter background and subtle movement */
+#change-color-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* ============================
+   Responsive Adjustments
+   ============================ */
+
+/* Ensures layout looks good on small screens */
+@media (max-width: 600px) {
+  #color-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  #change-color-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
